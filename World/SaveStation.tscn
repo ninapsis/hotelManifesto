@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://World/sinot.png" type="Texture" id=1]
+[ext_resource path="res://UI/WhiteSquare.png" type="Texture" id=2]
+[ext_resource path="res://World/SaveStation.gd" type="Script" id=3]
+[ext_resource path="res://luzbrilhando.tres" type="Animation" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 27.0782, 15.3571 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "New Anim"
+loop = true
+
+[sub_resource type="Animation" id=3]
+length = 0.9
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 0 ]
+}
+
+[node name="SaveStation" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 3.77008, -31.8504 )
+z_index = 4
+texture = ExtResource( 1 )
+hframes = 7
+
+[node name="SaveArea" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="Collider" type="CollisionShape2D" parent="SaveArea"]
+position = Vector2( 3, -16 )
+shape = SubResource( 1 )
+
+[node name="WhiteSpaceSprite" type="Sprite" parent="."]
+position = Vector2( 0, -14 )
+scale = Vector2( 1e-05, 1.25 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 2 )
+anims/luzbrilhando = ExtResource( 5 )
+anims/save = SubResource( 3 )
+
+[connection signal="body_entered" from="SaveArea" to="." method="_on_SaveArea_body_entered"]
+[connection signal="body_exited" from="SaveArea" to="." method="_on_SaveArea_body_exited"]

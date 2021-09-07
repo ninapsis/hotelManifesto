@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MonsterShot.wav-aa70da13bf822fea67a531e362ef4568.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/MonsterShot.wav"
+dest_files=[ "res://.import/MonsterShot.wav-aa70da13bf822fea67a531e362ef4568.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

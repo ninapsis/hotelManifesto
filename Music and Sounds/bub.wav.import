@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/bub.wav-053b5b310ef29d77d7715ed96a6a6610.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/bub.wav"
+dest_files=[ "res://.import/bub.wav-053b5b310ef29d77d7715ed96a6a6610.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,24 @@
+{
+	"color": "#ffe7b712",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1624481440.json",
+	"mirror_portraits": false,
+	"name": "Someone in a diving suit, similar to yours.",
+	"nickname": "Franco",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://mergulhador_portrait.png"
+		},
+		{
+			"name": "face",
+			"path": "res://mergulhador_rosto_portrait.png"
+		}
+	],
+	"scale": 100
+}

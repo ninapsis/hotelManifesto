@@ -1,0 +1,20 @@
+{
+	"color": "#ff728d10",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1624490572.json",
+	"mirror_portraits": false,
+	"name": "A girl standing in front of a cave. She looks worried.",
+	"nickname": "Liro",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://NPC/liro.png"
+		}
+	],
+	"scale": 100
+}

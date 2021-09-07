@@ -1,0 +1,62 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1624481440.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1627347141.cfg"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Music and Sounds/bub.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1624481440.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "OH GOD [wave rate=12 level=12]NNNNOOOOOOOOOO[/wave]\nTHERE'S A MONSTER UP THERE!"
+		},
+		{
+			"character": "character-1624481440.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Can you kill it for me, please? If that thing touches me..."
+		},
+		{
+			"character": "character-1624481440.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[speed=20] I am going to scream."
+		},
+		{
+			"action": "leaveall",
+			"character": "character-1624481440.json",
+			"event_id": "dialogic_003"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2",
+		"file": "timeline-1624481520.json",
+		"name": "timeline-franco"
+	}
+}

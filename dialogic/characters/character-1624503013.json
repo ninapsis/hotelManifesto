@@ -1,0 +1,20 @@
+{
+	"color": "#ffe04141",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1624503013.json",
+	"mirror_portraits": false,
+	"name": "The receptionist. He is typing nonstop",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://NPC/recepcionistam.png"
+		}
+	],
+	"scale": 100
+}

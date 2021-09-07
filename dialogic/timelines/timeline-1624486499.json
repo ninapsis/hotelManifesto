@@ -1,0 +1,37 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1624166294.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1624166925.cfg"
+		},
+		{
+			"character": "character-1624166294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "hey did you find the blue key?"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2",
+		"file": "timeline-1624486499.json",
+		"name": "timeline-mica-open"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"color": "#ffc5ab66",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1624500411.json",
+	"mirror_portraits": false,
+	"name": "A woman humming at a high frequence. She looks very focused",
+	"nickname": "Pauline",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://NPC/pauline.png"
+		}
+	],
+	"scale": 100
+}

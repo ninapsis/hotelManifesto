@@ -1,0 +1,20 @@
+{
+	"color": "#ff091750",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1624479878.json",
+	"mirror_portraits": false,
+	"name": "A girl leaning against a corner.",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://astronaauta.png"
+		}
+	],
+	"scale": 100
+}

@@ -1,0 +1,88 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1624166294.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Music and Sounds/herp.wav",
+			"volume": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1624166925.cfg"
+		},
+		{
+			"character": "character-1624166294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[shake rate=2 level =3]Hellurrrrrrrr[/shake]. Nice to meet you, kid. Name is Mica, but you can call me how it fits you, I don't care."
+		},
+		{
+			"character": "character-1624166294.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "So, you are here to become a member of the gang? Hah, you're acepted!!!!!!!! Yeah, just like that."
+		},
+		{
+			"choice": "Oh, that was easy... What do I get as a gangster?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1624166294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You get to be part of a family, like in the mafia. But we just hang out and have afternoon coffee together.\nIts cool, it helps keep solitude away.\nAnyways bye"
+		},
+		{
+			"choice": "I'm here for a diving helmet",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1624166294.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see. And you should, yours is a bit rusty, that will give you salmonella.\nYou can never be too careful when it comes to that.\nBut I don't know where you can get one. I got my helmet in the sewers while I was working out\nGood luck, though"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"action": "leaveall",
+			"character": "[All]",
+			"event_id": "dialogic_003"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2",
+		"file": "timeline-1624166279.json",
+		"name": "timeline-mica"
+	}
+}

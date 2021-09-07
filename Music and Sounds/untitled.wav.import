@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/untitled.wav-5c1c3500d527683f6c8fe3f24d67c364.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/untitled.wav"
+dest_files=[ "res://.import/untitled.wav-5c1c3500d527683f6c8fe3f24d67c364.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Dialog.tscn" type="PackedScene" id=1]
+[ext_resource path="res://QuestLog.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GUI.gd" type="Script" id=6]
+[ext_resource path="res://uno.tres" type="Animation" id=7]
+[ext_resource path="res://dos.tres" type="Animation" id=8]
+[ext_resource path="res://UI/questylogy_dos.png" type="Texture" id=9]
+
+[node name="GUI" type="CanvasLayer"]
+pause_mode = 2
+layer = 4
+script = ExtResource( 6 )
+
+[node name="Dialog" parent="." instance=ExtResource( 1 )]
+
+[node name="QuestLog" parent="." instance=ExtResource( 5 )]
+
+[node name="uno" parent="QuestLog" index="0"]
+position = Vector2( 185.668, 328.222 )
+
+[node name="Button" parent="QuestLog" index="1"]
+margin_left = 415.057
+margin_top = 147.189
+margin_right = 491.057
+margin_bottom = 166.189
+
+[node name="dos" parent="QuestLog" index="2"]
+texture = ExtResource( 9 )
+
+[node name="QuestList" parent="QuestLog" index="3"]
+margin_bottom = 168.0
+
+[node name="cinco" parent="QuestLog" index="4"]
+margin_right = 153.86
+
+[node name="cinco2" parent="QuestLog" index="5"]
+margin_left = 305.859
+margin_top = -49.072
+margin_right = 375.859
+margin_bottom = -35.072
+
+[node name="QuestDescription" parent="QuestLog" index="6"]
+margin_right = 271.892
+margin_bottom = -16.5154
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/dos = ExtResource( 8 )
+anims/uno = ExtResource( 7 )
+
+[editable path="QuestLog"]

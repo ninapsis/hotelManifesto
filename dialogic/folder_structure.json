@@ -1,0 +1,152 @@
+{
+	"files": [
+
+	],
+	"folders": {
+		"Characters": {
+			"files": [
+				"character-1624125731.json",
+				"character-1624164463.json",
+				"character-1624166294.json",
+				"character-1624214397.json",
+				"character-1624479878.json",
+				"character-1624481440.json",
+				"character-1624490572.json",
+				"character-1624500411.json",
+				"character-1624503013.json",
+				"character-1624590778.json",
+				"character-1624824979.json",
+				"character-1627009625.json"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": true
+			}
+		},
+		"Definitions": {
+			"files": [
+
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Themes": {
+			"files": [
+				"theme-1624166925.cfg",
+				"theme-1624501454.cfg",
+				"theme-1624502559.cfg",
+				"theme-1626139715.cfg",
+				"theme-1624136073.cfg",
+				"theme-1627347141.cfg",
+				"theme-1627347560.cfg"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Timelines": {
+			"files": [
+				"timeline-1629848907.json"
+			],
+			"folders": {
+				"koisas": {
+					"files": [
+						"timeline-1624405177.json",
+						"timeline-1624488133.json",
+						"timeline-1624489693.json",
+						"timeline-1624852561.json",
+						"timeline-1624854153.json",
+						"timeline-1624854200.json",
+						"timeline-1624854237.json",
+						"timeline-1626138850.json",
+						"timeline-1626728358.json",
+						"timeline-1626730937.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"personagens": {
+					"files": [
+						"timeline-1624133930.json",
+						"timeline-1624479906.json",
+						"timeline-1624500399.json",
+						"timeline-1624503485.json",
+						"timeline-1624824952.json",
+						"timeline-1627080270.json",
+						"timeline-1627080272.json",
+						"timeline-1627080575.json"
+					],
+					"folders": {
+						"franco": {
+							"files": [
+								"timeline-1624481520.json",
+								"timeline-1624483708.json",
+								"timeline-1624484073.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						},
+						"liro": {
+							"files": [
+								"timeline-1624490556.json",
+								"timeline-1624490733.json",
+								"timeline-1624490740.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						},
+						"mica": {
+							"files": [
+								"timeline-1624166279.json",
+								"timeline-1624486499.json",
+								"timeline-1624486506.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						}
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				}
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		}
+	}
+}

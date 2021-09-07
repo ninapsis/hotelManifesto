@@ -1,0 +1,63 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1627347560.cfg"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Music and Sounds/girl-sad.wav",
+			"volume": 0
+		},
+		{
+			"action": "join",
+			"character": "character-1624479878.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1624479878.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, hi. Sorry, I don't really feel like talking. I'm kinda down lately."
+		},
+		{
+			"character": "character-1624479878.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The only thing that would cheer me up right now is a bottle of [color=lime]cucumber water[/color]. Smells good, tastes weird."
+		},
+		{
+			"character": "character-1624479878.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I would go to the Baaaar and get one myself, but I have a hard time leaving this cozy corner. "
+		},
+		{
+			"character": "character-1624479878.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Safety comes with a price, I guess."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2",
+		"file": "timeline-1624479906.json",
+		"name": "timeline-calista"
+	}
+}

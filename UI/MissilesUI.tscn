@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://UI/PixelFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://UI/PlayerMissileIcon.png" type="Texture" id=2]
+[ext_resource path="res://UI/MissilesUI.gd" type="Script" id=3]
+
+[node name="MissilesUI" type="HBoxContainer"]
+visible = false
+margin_right = 17.0
+margin_bottom = 10.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureRect" parent="."]
+margin_right = 8.0
+margin_bottom = 10.0
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 12.0
+margin_top = 1.0
+margin_right = 17.0
+margin_bottom = 8.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/line_spacing = 0
+custom_constants/shadow_offset_y = 1
+custom_constants/shadow_as_outline = 1
+text = "5"

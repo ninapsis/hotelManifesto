@@ -1,0 +1,20 @@
+{
+	"color": "#ffd66a12",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1627009625.json",
+	"mirror_portraits": false,
+	"name": "Baaaar",
+	"nickname": "Baaaar",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100
+}

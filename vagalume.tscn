@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://World/luz.tscn" type="PackedScene" id=1]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( -8.33249, -27.6061, 8.33249, 27.6061, -3, -28, 2.00226, -14.6832, -2.00226, 14.6832, -22, -14, 0, 0, 0, 0, -8, -5, -2.66968, 17.6866, 2.66968, -17.6866, 9, -4, -5.00565, 14.3495, 5.00565, -14.3495, -8, -13, 1.43422, 9.34388, -1.43422, -9.34388, 9, -18, -1.93558, -15.2177, 1.93558, 15.2177, -3, -28 )
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Loop"
+length = 20.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:offset")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 20 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 152.14 ]
+}
+
+[node name="vagaulmeu" type="Node2D"]
+position = Vector2( 901, 490 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 9.23102, -7.18195 )
+collision_layer = 2
+collision_mask = 0
+motion/sync_to_physics = true
+
+[node name="luz" parent="KinematicBody2D" instance=ExtResource( 1 )]
+position = Vector2( -0.142578, -0.163086 )
+scale = Vector2( 0.066347, 0.0651285 )
+color = Color( 0.988235, 0.835294, 0.12549, 1 )
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource( 1 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2( 9.23104, -7.18195 )
+offset = 82.7525
+rotate = false
+loop = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../../KinematicBody2D")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Loop"
+anims/Loop = SubResource( 2 )

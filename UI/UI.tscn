@@ -1,0 +1,71 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://UI/HealthMeter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Menus/PauseMenu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/MissilesUI.tscn" type="PackedScene" id=3]
+[ext_resource path="res://World/chave-blue.png" type="Texture" id=4]
+[ext_resource path="res://UI/chave mamica.gd" type="Script" id=5]
+[ext_resource path="res://UI/chave.gd" type="Script" id=6]
+[ext_resource path="res://World/chave-blueicy.png" type="Texture" id=7]
+[ext_resource path="res://UI/ButtonStylebox.tres" type="StyleBox" id=8]
+[ext_resource path="res://UI/ButtonHoverStylebox.tres" type="StyleBox" id=9]
+[ext_resource path="res://UI/chaveVendor.gd" type="Script" id=10]
+[ext_resource path="res://World/pexe.png" type="Texture" id=11]
+[ext_resource path="res://World/rat.png" type="Texture" id=12]
+[ext_resource path="res://UI/rat.gd" type="Script" id=13]
+
+[node name="UI" type="CanvasLayer"]
+layer = 4
+
+[node name="rat" type="Sprite" parent="."]
+position = Vector2( 24, 38 )
+texture = ExtResource( 12 )
+script = ExtResource( 13 )
+
+[node name="pexe" type="Sprite" parent="."]
+position = Vector2( 55.2, 18.9 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 11 )
+script = ExtResource( 6 )
+
+[node name="chaveVendor" type="Sprite" parent="."]
+position = Vector2( 83.2, 23.9 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 7 )
+script = ExtResource( 10 )
+
+[node name="chave_mamica" type="Sprite" parent="."]
+position = Vector2( 108.2, 18.9 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 4 )
+script = ExtResource( 5 )
+
+[node name="MissilesUI" parent="." instance=ExtResource( 3 )]
+margin_left = 4.0
+margin_top = 20.0
+margin_right = 21.0
+margin_bottom = 30.0
+
+[node name="HealthMeter" parent="." instance=ExtResource( 1 )]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 25.0
+margin_bottom = 16.0
+
+[node name="Empty" parent="HealthMeter" index="0"]
+expand = false
+
+[node name="Full" parent="HealthMeter" index="1"]
+expand = false
+
+[node name="PauseMenu" parent="." instance=ExtResource( 2 )]
+visible = false
+
+[node name="ResumeButton" parent="PauseMenu/CenterContainer/VBoxContainer" index="2"]
+process_priority = 3
+custom_styles/hover = ExtResource( 9 )
+custom_styles/pressed = ExtResource( 8 )
+shortcut_in_tooltip = false
+
+[editable path="HealthMeter"]
+[editable path="PauseMenu"]

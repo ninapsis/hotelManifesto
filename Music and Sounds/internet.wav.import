@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/internet.wav-b90d9dbd47dd03159279ee69a0120881.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/internet.wav"
+dest_files=[ "res://.import/internet.wav-b90d9dbd47dd03159279ee69a0120881.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

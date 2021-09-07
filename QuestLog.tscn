@@ -1,0 +1,94 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://QuestLog.gd" type="Script" id=1]
+[ext_resource path="res://UI/PixelFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://UI/background didalog 2.png" type="Texture" id=3]
+[ext_resource path="res://UI/DefaultTheme.tres" type="Theme" id=4]
+[ext_resource path="res://UI/questylogy_uno.png" type="Texture" id=5]
+[ext_resource path="res://UI/PixelFonte2.tres" type="DynamicFont" id=6]
+[ext_resource path="res://UI/PixelFonte4.tres" type="DynamicFont" id=7]
+
+[node name="QuestLog" type="Control" groups=[
+"GUI_Dialog",
+"Quest",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="uno" type="Sprite" parent="."]
+position = Vector2( -91.5558, -75.5099 )
+texture = ExtResource( 5 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 415.0
+margin_top = 145.941
+margin_right = 492.0
+margin_bottom = 175.941
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color_hover = Color( 0.756863, 0.545098, 0.298039, 1 )
+text = "RETURN"
+
+[node name="dos" type="Sprite" parent="."]
+position = Vector2( 457.448, 121.089 )
+texture = ExtResource( 3 )
+
+[node name="QuestList" type="ItemList" parent="."]
+self_modulate = Color( 0.980392, 0.827451, 0.827451, 1 )
+margin_left = -135.571
+margin_top = 57.0
+margin_right = -36.5709
+margin_bottom = 177.0
+theme = ExtResource( 4 )
+custom_fonts/font = ExtResource( 6 )
+custom_colors/guide_color = Color( 0.886275, 0.882353, 0.623529, 1 )
+custom_colors/font_color_selected = Color( 0.835294, 0.815686, 0.533333, 1 )
+custom_colors/font_color = Color( 0.898039, 0.882353, 0.666667, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cinco" type="Label" parent="."]
+margin_left = 99.8595
+margin_top = -53.072
+margin_right = 148.86
+margin_bottom = -39.072
+rect_pivot_offset = Vector2( 366.169, 36.2779 )
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0.933333, 0.909804, 0.741176, 1 )
+text = "ACTIVE QUESTS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cinco2" type="Label" parent="."]
+margin_left = 99.8595
+margin_top = -53.072
+margin_right = 148.86
+margin_bottom = -39.072
+rect_pivot_offset = Vector2( 366.169, 36.2779 )
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0.933333, 0.909804, 0.741176, 1 )
+text = "QUEST DESCRIPTION"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuestDescription" type="RichTextLabel" parent="."]
+margin_left = 217.892
+margin_top = -71.5156
+margin_right = 289.892
+margin_bottom = -16.5156
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0.443137, 0.152941, 0.152941, 1 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="item_selected" from="QuestList" to="." method="_on_QuestList_item_selected"]

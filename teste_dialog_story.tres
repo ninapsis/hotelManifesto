@@ -1,0 +1,63 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/EXP-System-Dialog/Resource_EditorStory/EXP_EditorStory.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+TYPE = "EXP_Story_editor"
+names = {
+}
+story = {
+1: {
+"available_nid": [  ],
+"groups": [ "" ],
+"human_readable_description": "New Dialog - Enter Human Readable Description.",
+"nodes": {
+}
+},
+2: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "New Dialog - Enter Human Readable Description.",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2,
+1: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "hie",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 580, 40 ),
+"links": {
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "yes",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 580, 200 ),
+"links": {
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "no",
+"type": "line"
+}
+}
+},
+3: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "New Dialog - Enter Human Readable Description.",
+"nodes": {
+}
+}
+}
+available_dids = [  ]
+groups = [ "npc" ]

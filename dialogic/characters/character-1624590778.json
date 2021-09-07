@@ -1,0 +1,20 @@
+{
+	"color": "#ffc74fe9",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1624590778.json",
+	"mirror_portraits": false,
+	"name": "Its the plant. It is talking to you.",
+	"nickname": "Lavender",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100
+}

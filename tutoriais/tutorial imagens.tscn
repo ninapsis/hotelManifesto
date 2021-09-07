@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://tutoriais/caixa dialogo area2d.png" type="Texture" id=1]
+[ext_resource path="res://tutoriais/tutorial imagens.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 40, 13.9205 )
+
+[node name="tutorial imagens" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -80.0
+margin_top = -104.0
+margin_right = 200.0
+margin_bottom = -60.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

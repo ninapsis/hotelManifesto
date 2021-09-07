@@ -1,0 +1,24 @@
+{
+	"color": "#ff13a799",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1624164463.json",
+	"mirror_portraits": false,
+	"name": "Aura. She looks relaxed",
+	"nickname": "Aura",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://gata.png"
+		},
+		{
+			"name": "happee",
+			"path": "res://NPC/gata.png"
+		}
+	],
+	"scale": 100
+}

@@ -1,0 +1,103 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1627347141.cfg"
+		},
+		{
+			"action": "join",
+			"character": "character-1624125731.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Music and Sounds/huhuh.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1624125731.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Hey hey! I haven't seen you around before. I mean, I haven't seen your mask around before. Nice diving suit!"
+		},
+		{
+			"character": "character-1624125731.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Are you here to move in to the Hotel?"
+		},
+		{
+			"choice": "Hotel? No, I'm here to buy a new diving helmet",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1624125731.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "[wave amp=5 freq=2]Ohhh I see.[/wave] Yeah, a lot of people wear helmets here, but I'm not sure if this is the place to buy a new one..."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Music and Sounds/huhuh.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1624164463.json",
+			"event_id": "dialogic_001",
+			"portrait": "happee",
+			"text": "Maybe I should know it, since I'm running for prefect! Vote for Aura!"
+		},
+		{
+			"choice": "Uh... that would be cool I guess",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1624125731.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That's great. The Hotel is at the Forest, east of here. They always have empty rooms, so you can just stay there for as long as you  want to. Yay!"
+		},
+		{
+			"character": "character-1624164463.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My name is Aura, btw"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2",
+		"file": "timeline-1624133930.json",
+		"name": "timeline-aura"
+	}
+}

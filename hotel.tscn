@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://World/hotel maior.png" type="Texture" id=1]
+[ext_resource path="res://HotelPlatforms.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 21.3081, 2 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 28, 4 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 53, 5 )
+
+[node name="Sprite" type="Sprite"]
+position = Vector2( 0, -141 )
+texture = ExtResource( 1 )
+
+[node name="HotelPlatforms" type="StaticBody2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HotelPlatforms" groups=[
+"Platform",
+]]
+position = Vector2( -2, 45 )
+scale = Vector2( 8.8, 1 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="HotelPlatforms" groups=[
+"Platform",
+]]
+position = Vector2( -1, -34 )
+scale = Vector2( 1.35103, 0.814773 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="HotelPlatforms" groups=[
+"Platform",
+]]
+position = Vector2( 114, -50 )
+scale = Vector2( 2.56, 1 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="HotelPlatforms" groups=[
+"Platform",
+]]
+position = Vector2( -116, -53 )
+scale = Vector2( 3.24, 1 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="HotelPlatforms" groups=[
+"Platform",
+]]
+position = Vector2( 0, 46 )
+scale = Vector2( 0.68, 1 )
+shape = SubResource( 3 )
+one_way_collision = true

@@ -1,0 +1,114 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Menus/StartMenu.gd" type="Script" id=1]
+[ext_resource path="res://UI/DefaultTheme.tres" type="Theme" id=2]
+[ext_resource path="res://UI/PixelFonte2.tres" type="DynamicFont" id=3]
+[ext_resource path="res://UI/instructions.png" type="Texture" id=4]
+[ext_resource path="res://Tilesets/banner bracos.png" type="Texture" id=5]
+[ext_resource path="res://Music and Sounds/humming_new_02.ogg" type="AudioStream" id=6]
+
+[node name="StartMenu" type="CanvasLayer"]
+layer = 9
+script = ExtResource( 1 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 384.0
+margin_bottom = 355.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="CenterContainer"]
+position = Vector2( 192, 108 )
+scale = Vector2( 0.31, 0.31 )
+texture = ExtResource( 5 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 157.0
+margin_top = 145.0
+margin_right = 227.0
+margin_bottom = 210.0
+
+[node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_right = 70.0
+margin_bottom = 19.0
+rect_min_size = Vector2( 70, 19 )
+theme = ExtResource( 2 )
+text = "NEW GAME"
+
+[node name="LoadButton" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 23.0
+margin_right = 70.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 70, 19 )
+theme = ExtResource( 2 )
+text = "LOAD GAME"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 46.0
+margin_right = 70.0
+margin_bottom = 65.0
+rect_min_size = Vector2( 70, 19 )
+theme = ExtResource( 2 )
+text = "QUIT"
+
+[node name="Coisas" type="TextureRect" parent="CenterContainer"]
+visible = false
+margin_left = 32.0
+margin_top = 87.0
+margin_right = 352.0
+margin_bottom = 267.0
+texture = ExtResource( 4 )
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer/Coisas"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 13.0
+margin_top = -76.0
+margin_right = -10.0
+margin_bottom = 64.0
+theme = ExtResource( 2 )
+custom_fonts/normal_font = ExtResource( 3 )
+text = "W - Jump, double jump
+A - Left
+S - Slide down on walls
+D - Right
+
+E - Interact
+
+Left Mouse Button - Shoot 
+Right Mouse Button - Use powerup
+
+ESCAPE = Pause game
+
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReturnButton" type="Button" parent="CenterContainer/Coisas"]
+margin_left = 229.374
+margin_top = 124.487
+margin_right = 299.374
+margin_bottom = 144.487
+rect_min_size = Vector2( 70, 20 )
+text = "Return"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+volume_db = -7.068
+autoplay = true
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/LoadButton" to="." method="_on_LoadButton_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="CenterContainer/Coisas/ReturnButton" to="." method="_on_ReturnButton_pressed"]

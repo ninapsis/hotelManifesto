@@ -1,0 +1,56 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1626139715.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dear diary. [speed=20]\nToday was insane. I cant believe what Im bout to write.\nI went to the Baaaar and Pauline was sobbing over whatever and then she said something like omg I miss Jebediah so much\nand I remember thinking wait is Pauline meeting new people? bc that means I can finally introduce her to my irish cousin\nand then I remember thinking oh WAIT AGAIN who is Jebed\nwait \nwait.\nI was told to write about feelings or something, not my day. this is not supposed to be a journal\nbut what do I write, then?\nI dont do anything\n"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Do you want to keep reading? Seems very personal"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "não sei o que escrever aqui, depois eu vejo \nobrigada por chegar até aqui <3\nnao esquece de salvar seus projetos"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.1
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2",
+		"file": "timeline-1626138850.json",
+		"name": "timeline-journal"
+	}
+}

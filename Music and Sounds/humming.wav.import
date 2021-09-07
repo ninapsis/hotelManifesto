@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/humming.wav-0389f20bffb5e7c4fd73a78db6c91351.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/humming.wav"
+dest_files=[ "res://.import/humming.wav-0389f20bffb5e7c4fd73a78db6c91351.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
