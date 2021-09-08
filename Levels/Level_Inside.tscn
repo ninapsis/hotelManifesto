@@ -4635,11 +4635,23 @@ position = Vector2( 1329, -18 )
 collision_layer = 256
 script = ExtResource( 27 )
 connection = ExtResource( 52 )
-new_level_path = "res://Levels/Level_Baaaar.tscn"
+new_level_path = "res://Levels/Level_Gastation.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door2" index="0"]
 position = Vector2( 15, 20 )
 shape = SubResource( 253 )
+
+[node name="vagaulmeu3" parent="." index="34" instance=ExtResource( 49 )]
+position = Vector2( 576.177, -77.2051 )
+
+[node name="KinematicBody2D" parent="vagaulmeu3" index="0"]
+position = Vector2( 9.23105, -7.18192 )
+
+[node name="luz" parent="vagaulmeu3/KinematicBody2D" index="0"]
+position = Vector2( -14.397, -12.6357 )
+
+[node name="PathFollow2D" parent="vagaulmeu3/Path2D" index="0"]
+position = Vector2( 9.23104, -7.18191 )
 
 [connection signal="body_entered" from="Door elevator down" to="Door elevator down" method="_on_Door_body_entered"]
 [connection signal="body_exited" from="Door elevator down" to="Door elevator down" method="_on_Door_body_exited"]
@@ -4664,3 +4676,4 @@ shape = SubResource( 253 )
 [editable path="luz2"]
 [editable path="luz3"]
 [editable path="Door"]
+[editable path="vagaulmeu3"]
