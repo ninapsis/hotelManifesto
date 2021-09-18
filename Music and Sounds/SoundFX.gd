@@ -19,7 +19,6 @@ var sounds = {
 	"Huhuh" : load(sounds_path + "huhuh.wav"),
 	"Herp" : load(sounds_path + "herp.wav"),
 	"Vuash" : load(sounds_path + "vuash.wav"),
-	"Boy" : load(sounds_path + "boy.wav"),
 	"Baby" : load(sounds_path + "baby.wav"),
 	"Baby2" : load(sounds_path + "baby2.wav"),
 	"Miau" : load(sounds_path + "gato.wav"),
@@ -31,7 +30,7 @@ var sounds = {
 	"Typewriter":load(sounds_path + "typewriter.wav"),
 	"SceneChange": load(sounds_path + "scenechange.wav"),
 	"internet": load(sounds_path + "internet.wav"),
-	"mainmenuhum": load(sounds_path + "humming_new_02.ogg"),
+#	"mainmenuhum": load(sounds_path + "humming.wav"),
 	"girl-sad": load(sounds_path + "girl-sad.wav")
 }
 func _ready():

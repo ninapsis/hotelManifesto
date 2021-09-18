@@ -24,6 +24,7 @@
 [ext_resource path="res://TextAnim.tscn" type="PackedScene" id=22]
 [ext_resource path="res://portao.png" type="Texture" id=23]
 [ext_resource path="res://Brick.gd" type="Script" id=24]
+[ext_resource path="res://Particles.tscn" type="PackedScene" id=25]
 [ext_resource path="res://TileMap.tscn" type="PackedScene" id=26]
 [ext_resource path="res://cyberbanner.png" type="Texture" id=27]
 [ext_resource path="res://Tilesets/tileset azul.png" type="Texture" id=28]
@@ -3344,63 +3345,63 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 2 ]
 }
 
-[sub_resource type="RectangleShape2D" id=380]
+[sub_resource type="RectangleShape2D" id=335]
 extents = Vector2( 15, 31.2222 )
 
-[sub_resource type="RectangleShape2D" id=379]
+[sub_resource type="RectangleShape2D" id=336]
 extents = Vector2( 31.3186, 10 )
 
-[sub_resource type="OccluderPolygon2D" id=335]
+[sub_resource type="OccluderPolygon2D" id=337]
 polygon = PoolVector2Array( 1.89944, 3.03234, 6.67598, 3.03234, 6.67598, -5.59299, -5.83799, -5.59299, -5.83799, 3.03234 )
 
-[sub_resource type="OccluderPolygon2D" id=336]
+[sub_resource type="OccluderPolygon2D" id=338]
 polygon = PoolVector2Array( 1.62011, -2.15633, 3.68715, -2.15633, 3.68715, 0.673855, 1.62011, 0.673855 )
 
-[sub_resource type="CameraTexture" id=337]
+[sub_resource type="CameraTexture" id=339]
 
-[sub_resource type="Curve2D" id=338]
+[sub_resource type="Curve2D" id=340]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 247, 1 )
 }
 
-[sub_resource type="Curve2D" id=339]
+[sub_resource type="Curve2D" id=341]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -256, 0 )
 }
 
-[sub_resource type="Animation" id=340]
-length = 4.0
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 2 ),
-"transitions": PoolRealArray( -2, -2 ),
-"update": 0,
-"values": [ 0.0, 1.0 ]
-}
-
-[sub_resource type="Animation" id=341]
-length = 4.0
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 2 ),
-"transitions": PoolRealArray( -2, -2 ),
-"update": 0,
-"values": [ 0.0, 1.0 ]
-}
-
 [sub_resource type="Animation" id=342]
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=343]
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Path2D/PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=344]
 length = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("TextureRect:rect_scale")
@@ -3413,37 +3414,6 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1e-05, 1 ), Vector2( 1, 1 ) ]
-}
-
-[sub_resource type="Animation" id=343]
-length = 0.2
-tracks/0/type = "value"
-tracks/0/path = NodePath("TextureRect:rect_scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 1e-05, 1 ) ]
-}
-
-[sub_resource type="Animation" id=344]
-length = 1.5
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ]
 }
 
 [sub_resource type="Animation" id=345]
@@ -3458,25 +3428,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1e-05, 1 ), Vector2( 1, 1 ) ]
-}
-
-[sub_resource type="Animation" id=346]
-length = 0.2
-tracks/0/type = "value"
-tracks/0/path = NodePath("TextureRect:rect_scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 1e-05, 1 ) ]
 }
 
-[sub_resource type="Animation" id=347]
+[sub_resource type="Animation" id=346]
 length = 1.5
 loop = true
 tracks/0/type = "value"
@@ -3490,6 +3445,21 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ]
+}
+
+[sub_resource type="Animation" id=347]
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1 ), Vector2( 1, 1 ) ]
 }
 
 [sub_resource type="Animation" id=348]
@@ -3504,10 +3474,41 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1e-05, 1 ), Vector2( 1, 1 ) ]
+"values": [ Vector2( 1, 1 ), Vector2( 1e-05, 1 ) ]
 }
 
 [sub_resource type="Animation" id=349]
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ]
+}
+
+[sub_resource type="Animation" id=350]
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=351]
 length = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("TextureRect:rect_scale")
@@ -3522,7 +3523,7 @@ tracks/0/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1e-05, 1 ) ]
 }
 
-[sub_resource type="Animation" id=350]
+[sub_resource type="Animation" id=352]
 length = 1.5
 loop = true
 tracks/0/type = "value"
@@ -3538,16 +3539,16 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ]
 }
 
-[sub_resource type="RectangleShape2D" id=351]
+[sub_resource type="RectangleShape2D" id=353]
 extents = Vector2( 40, 13.9205 )
 
-[sub_resource type="Animation" id=352]
-length = 0.2
-
-[sub_resource type="Animation" id=353]
-length = 0.2
-
 [sub_resource type="Animation" id=354]
+length = 0.2
+
+[sub_resource type="Animation" id=355]
+length = 0.2
+
+[sub_resource type="Animation" id=356]
 length = 1.5
 loop = true
 tracks/0/type = "value"
@@ -3563,7 +3564,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ]
 }
 
-[sub_resource type="Animation" id=355]
+[sub_resource type="Animation" id=357]
 length = 1.2
 loop = true
 tracks/0/type = "value"
@@ -3579,39 +3580,39 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
 }
 
-[sub_resource type="Animation" id=356]
-length = 0.4
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 1, 2, 3 ]
-}
-
-[sub_resource type="Animation" id=357]
-length = 0.4
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 1, 2, 3 ]
-}
-
 [sub_resource type="Animation" id=358]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
+[sub_resource type="Animation" id=359]
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
+[sub_resource type="Animation" id=360]
 length = 0.6
 loop = true
 tracks/0/type = "value"
@@ -3627,19 +3628,19 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5 ]
 }
 
-[sub_resource type="RectangleShape2D" id=359]
+[sub_resource type="RectangleShape2D" id=361]
 extents = Vector2( 1.67968, 4.27632 )
 
-[sub_resource type="RectangleShape2D" id=360]
+[sub_resource type="RectangleShape2D" id=362]
 extents = Vector2( 137.5, 16 )
 
-[sub_resource type="OccluderPolygon2D" id=361]
+[sub_resource type="OccluderPolygon2D" id=363]
 polygon = PoolVector2Array( -41.3333, -24, -34.6667, -24, -34.6667, -22.6667, -36.6667, -21.3333, -36.6667, 33.3333, -39.3333, 33.3333, -39.3333, -21.3333, -41.3333, -22.6667 )
 
-[sub_resource type="OccluderPolygon2D" id=362]
+[sub_resource type="OccluderPolygon2D" id=364]
 polygon = PoolVector2Array( -26, -19.3333, 26.6667, -19.3333, 27.3333, -16.6667, 27.3333, 5.33333, 25.3333, 10, -26.6667, 10, -27.3333, 6, -27.3333, -16.6667 )
 
-[sub_resource type="Animation" id=363]
+[sub_resource type="Animation" id=365]
 length = 10.0
 loop = true
 tracks/0/type = "value"
@@ -3665,38 +3666,6 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -143, 131 ), Vector2( -237, 122 ), Vector2( -147, 124 ) ]
-}
-
-[sub_resource type="Animation" id=364]
-length = 3.0
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:energy")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ 1.0, 0.5, 1.0 ]
-}
-
-[sub_resource type="Animation" id=365]
-length = 3.0
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:energy")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ 1.0, 0.5, 1.0 ]
 }
 
 [sub_resource type="Animation" id=366]
@@ -3751,6 +3720,38 @@ tracks/0/keys = {
 length = 3.0
 loop = true
 tracks/0/type = "value"
+tracks/0/path = NodePath(".:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.5, 1.0 ]
+}
+
+[sub_resource type="Animation" id=370]
+length = 3.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.5, 1.0 ]
+}
+
+[sub_resource type="Animation" id=371]
+length = 3.0
+loop = true
+tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -3763,7 +3764,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5, 0 ]
 }
 
-[sub_resource type="Animation" id=370]
+[sub_resource type="Animation" id=372]
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("CanvasLayer/caixa dialogo area2d:position")
@@ -3862,7 +3863,7 @@ tracks/7/keys = {
 "values": [ Vector2( -115, 102 ) ]
 }
 
-[sub_resource type="Animation" id=371]
+[sub_resource type="Animation" id=373]
 length = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("CanvasLayer/RichTextLabel:text")
@@ -3937,7 +3938,7 @@ tracks/5/keys = {
 "values": [ Vector2( 73, 20 ) ]
 }
 
-[sub_resource type="Animation" id=372]
+[sub_resource type="Animation" id=374]
 length = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("CanvasLayer/proceed 3:rect_position")
@@ -4060,7 +4061,7 @@ tracks/9/keys = {
 "values": [ "You pull the drain. A hot, smelly breeze touches your face. You find a [color=green]Smelly Fish[/color] amongst a puddle of... hopefully water." ]
 }
 
-[sub_resource type="Animation" id=373]
+[sub_resource type="Animation" id=375]
 length = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("CanvasLayer/proceed 4:rect_position")
@@ -4147,7 +4148,7 @@ tracks/6/keys = {
 "values": [ "You bend over and pull the [color=green]Smelly Fish[/color] out of the sewers. You stuff it in your pocket." ]
 }
 
-[sub_resource type="Animation" id=374]
+[sub_resource type="Animation" id=376]
 length = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("CanvasLayer/caixa dialogo area2d:position")
@@ -4246,7 +4247,7 @@ tracks/7/keys = {
 "values": [ Vector2( 442, 88 ), Vector2( 442, 88 ) ]
 }
 
-[sub_resource type="Animation" id=375]
+[sub_resource type="Animation" id=377]
 length = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("CanvasLayer/caixa dialogo area2d:position")
@@ -4357,7 +4358,7 @@ tracks/8/keys = {
 "values": [ Vector2( 123, 20 ), Vector2( 69, 20 ) ]
 }
 
-[sub_resource type="Animation" id=376]
+[sub_resource type="Animation" id=378]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -4384,7 +4385,7 @@ tracks/1/keys = {
 "values": [ 0, 1, 2, 3, 0 ]
 }
 
-[sub_resource type="Animation" id=377]
+[sub_resource type="Animation" id=379]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -4410,22 +4411,6 @@ tracks/1/keys = {
 "update": 1,
 "values": [ 0, 1, 2, 3, 0 ]
 }
-
-[sub_resource type="ParticlesMaterial" id=378]
-emission_shape = 2
-emission_box_extents = Vector3( 14.609, 1, 1 )
-flag_disable_z = true
-gravity = Vector3( 0, 98, 0 )
-orbit_velocity = 0.2
-orbit_velocity_random = 0.89
-linear_accel = 32.61
-linear_accel_random = 0.79
-radial_accel = 19.57
-radial_accel_random = 1.0
-tangential_accel = 19.57
-color = Color( 0.615686, 0.392157, 0.968627, 1 )
-hue_variation = -0.09
-hue_variation_random = 0.67
 
 [node name="Level_00" instance=ExtResource( 1 )]
 
@@ -4647,7 +4632,7 @@ flip_h = true
 
 [node name="Collider" type="CollisionShape2D" parent="BrickGroup/Brick9" index="1"]
 position = Vector2( 14.9999, 30.5556 )
-shape = SubResource( 380 )
+shape = SubResource( 335 )
 
 [node name="Area2D2" type="Area2D" parent="BrickGroup/Brick9" index="2"]
 position = Vector2( 9.52441, -40.7433 )
@@ -4655,7 +4640,7 @@ position = Vector2( 9.52441, -40.7433 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BrickGroup/Brick9/Area2D2" index="0"]
 position = Vector2( 29.0709, 71.4618 )
 rotation = 1.5708
-shape = SubResource( 379 )
+shape = SubResource( 336 )
 
 [node name="Sprite2" type="Sprite" parent="BrickGroup/Brick9" index="3"]
 position = Vector2( 31.9999, 61.1111 )
@@ -4722,10 +4707,10 @@ position = Vector2( 868.001, 287.997 )
 visible = false
 position = Vector2( -191, -285 )
 scale = Vector2( 35.8, 14.84 )
-occluder = SubResource( 335 )
+occluder = SubResource( 337 )
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="LightOccluder2D" index="0"]
-occluder = SubResource( 336 )
+occluder = SubResource( 338 )
 
 [node name="top bush" type="Sprite" parent="." index="19"]
 position = Vector2( 313, 32 )
@@ -4759,7 +4744,7 @@ motion_mirroring = Vector2( 470, 350 )
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/ParallaxBackground/ParallaxLayer" index="0"]
 texture = ExtResource( 4 )
-normal_map = SubResource( 337 )
+normal_map = SubResource( 339 )
 centered = false
 
 [node name="MovingPlatforms" parent="." index="25" instance=ExtResource( 15 )]
@@ -4769,7 +4754,7 @@ position = Vector2( 672, -512 )
 position = Vector2( 0, 0 )
 
 [node name="Path2D" parent="MovingPlatforms" index="1"]
-curve = SubResource( 338 )
+curve = SubResource( 340 )
 
 [node name="PathFollow2D" parent="MovingPlatforms/Path2D" index="0"]
 position = Vector2( 0, 0 )
@@ -4781,13 +4766,13 @@ position = Vector2( 928, -632 )
 position = Vector2( 0, 0 )
 
 [node name="Path2D" parent="MovingPlatforms2" index="1"]
-curve = SubResource( 339 )
+curve = SubResource( 341 )
 
 [node name="PathFollow2D" parent="MovingPlatforms2/Path2D" index="0"]
 position = Vector2( 0, 0 )
 
 [node name="AnimationPlayer" parent="MovingPlatforms2" index="2"]
-anims/Loop = SubResource( 340 )
+anims/Loop = SubResource( 342 )
 
 [node name="MovingPlatforms3" parent="." index="27" instance=ExtResource( 15 )]
 position = Vector2( 672, -776 )
@@ -4796,13 +4781,13 @@ position = Vector2( 672, -776 )
 position = Vector2( 0, 0 )
 
 [node name="Path2D" parent="MovingPlatforms3" index="1"]
-curve = SubResource( 338 )
+curve = SubResource( 340 )
 
 [node name="PathFollow2D" parent="MovingPlatforms3/Path2D" index="0"]
 position = Vector2( 0, 0 )
 
 [node name="AnimationPlayer" parent="MovingPlatforms3" index="2"]
-anims/Loop = SubResource( 341 )
+anims/Loop = SubResource( 343 )
 
 [node name="cyberbanner" type="Sprite" parent="." index="28"]
 position = Vector2( 1632, -653 )
@@ -4871,14 +4856,14 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" parent="inimigo" index="2"]
-"anims/caixa abrir" = SubResource( 342 )
-"anims/caixa fechar" = SubResource( 343 )
+"anims/caixa abrir" = SubResource( 344 )
+"anims/caixa fechar" = SubResource( 345 )
 
 [node name="placa" parent="inimigo" index="3"]
 position = Vector2( -30, 18 )
 
 [node name="AnimationPlayer" parent="inimigo/placa" index="0"]
-"anims/15 frames" = SubResource( 344 )
+"anims/15 frames" = SubResource( 346 )
 
 [node name="p0orta" parent="." index="32" instance=ExtResource( 32 )]
 position = Vector2( 1577.98, -600.714 )
@@ -4942,14 +4927,14 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" parent="portaoa" index="2"]
-"anims/caixa abrir" = SubResource( 345 )
-"anims/caixa fechar" = SubResource( 346 )
+"anims/caixa abrir" = SubResource( 347 )
+"anims/caixa fechar" = SubResource( 348 )
 
 [node name="placa" parent="portaoa" index="3"]
 position = Vector2( -16, 27 )
 
 [node name="AnimationPlayer" parent="portaoa/placa" index="0"]
-"anims/15 frames" = SubResource( 347 )
+"anims/15 frames" = SubResource( 349 )
 
 [node name="pular" parent="." index="34" instance=ExtResource( 32 )]
 position = Vector2( 26, 133 )
@@ -4977,14 +4962,14 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" parent="pular" index="2"]
-"anims/caixa abrir" = SubResource( 348 )
-"anims/caixa fechar" = SubResource( 349 )
+"anims/caixa abrir" = SubResource( 350 )
+"anims/caixa fechar" = SubResource( 351 )
 
 [node name="placa" parent="pular" index="3"]
 position = Vector2( -1, 32 )
 
 [node name="AnimationPlayer" parent="pular/placa" index="0"]
-"anims/15 frames" = SubResource( 350 )
+"anims/15 frames" = SubResource( 352 )
 
 [node name="wasd" type="Area2D" parent="." index="35"]
 position = Vector2( -502.205, 100.503 )
@@ -4992,11 +4977,11 @@ script = ExtResource( 31 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wasd" index="0"]
 scale = Vector2( 1.24, 3.52 )
-shape = SubResource( 351 )
+shape = SubResource( 353 )
 
 [node name="AnimationPlayerr" type="AnimationPlayer" parent="wasd" index="1"]
-"anims/caixa abrir" = SubResource( 352 )
-"anims/caixa fechar" = SubResource( 353 )
+"anims/caixa abrir" = SubResource( 354 )
+"anims/caixa fechar" = SubResource( 355 )
 
 [node name="placa" type="Sprite" parent="wasd" index="2"]
 texture = ExtResource( 35 )
@@ -5004,7 +4989,7 @@ hframes = 15
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="wasd/placa" index="0"]
 autoplay = "15 frames"
-"anims/15 frames" = SubResource( 354 )
+"anims/15 frames" = SubResource( 356 )
 
 [node name="wasdd" type="Sprite" parent="wasd" index="3"]
 position = Vector2( 1, -50 )
@@ -5014,14 +4999,14 @@ frame = 11
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="wasd/wasdd" index="0"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 355 )
+"anims/New Anim" = SubResource( 357 )
 
 [node name="muleke" parent="." index="36" instance=ExtResource( 41 )]
 position = Vector2( 1463.74, -567.292 )
 z_index = 4
 
 [node name="AnimationPlayer" parent="muleke" index="1"]
-"anims/idle 4 frames" = SubResource( 356 )
+"anims/idle 4 frames" = SubResource( 358 )
 
 [node name="CollisionShape2D" parent="muleke/Area2D" index="0"]
 position = Vector2( -15, -1 )
@@ -5042,15 +5027,15 @@ hframes = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="muleka" index="1"]
 autoplay = "idle 4 frames"
-"anims/idle 4 frames" = SubResource( 357 )
-"anims/idle 6 frames" = SubResource( 358 )
+"anims/idle 4 frames" = SubResource( 359 )
+"anims/idle 6 frames" = SubResource( 360 )
 
 [node name="Area2D" type="Area2D" parent="muleka" index="2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="muleka/Area2D" index="0"]
 position = Vector2( 14, -1 )
 scale = Vector2( 15.6596, 3.04 )
-shape = SubResource( 359 )
+shape = SubResource( 361 )
 
 [node name="collider2" type="StaticBody2D" parent="." index="38"]
 position = Vector2( -107, 161 )
@@ -5061,7 +5046,7 @@ script = ExtResource( 46 )
 "Platform",
 ]]
 position = Vector2( -157.143, 0 )
-shape = SubResource( 360 )
+shape = SubResource( 362 )
 one_way_collision = true
 
 [node name="welcome" parent="." index="39" instance=ExtResource( 53 )]
@@ -5069,16 +5054,16 @@ position = Vector2( -194, 99 )
 script = ExtResource( 61 )
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="welcome" index="2"]
-occluder = SubResource( 361 )
+occluder = SubResource( 363 )
 
 [node name="LightOccluder2D2" type="LightOccluder2D" parent="welcome" index="3"]
 position = Vector2( 74.6667, 0 )
-occluder = SubResource( 361 )
+occluder = SubResource( 363 )
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="welcome" index="4"]
 visible = false
 position = Vector2( -0.666656, 0.666672 )
-occluder = SubResource( 362 )
+occluder = SubResource( 364 )
 
 [node name="LIGHTS GROUP" type="Node2D" parent="." index="40"]
 z_index = 5
@@ -5098,7 +5083,7 @@ shadow_filter_smooth = 20.7
 
 [node name="AnimationPlayer" parent="LIGHTS GROUP/Light2D" index="0"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 363 )
+"anims/New Anim" = SubResource( 365 )
 
 [node name="light wasd" parent="LIGHTS GROUP" index="1" instance=ExtResource( 20 )]
 position = Vector2( -500.983, 95.8529 )
@@ -5108,7 +5093,7 @@ shadow_enabled = false
 
 [node name="AnimationPlayer" parent="LIGHTS GROUP/light wasd" index="0"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 364 )
+"anims/New Anim" = SubResource( 366 )
 
 [node name="light wasd2" parent="LIGHTS GROUP" index="2" instance=ExtResource( 20 )]
 position = Vector2( 562, 64 )
@@ -5118,7 +5103,7 @@ shadow_enabled = false
 
 [node name="AnimationPlayer" parent="LIGHTS GROUP/light wasd2" index="0"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 365 )
+"anims/New Anim" = SubResource( 367 )
 
 [node name="light wasd3" parent="LIGHTS GROUP" index="3" instance=ExtResource( 20 )]
 position = Vector2( 515, -186 )
@@ -5128,7 +5113,7 @@ shadow_enabled = false
 
 [node name="AnimationPlayer" parent="LIGHTS GROUP/light wasd3" index="0"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 366 )
+"anims/New Anim" = SubResource( 368 )
 
 [node name="light wasd4" parent="LIGHTS GROUP" index="4" instance=ExtResource( 20 )]
 position = Vector2( 1012, -415 )
@@ -5138,7 +5123,7 @@ shadow_enabled = false
 
 [node name="AnimationPlayer" parent="LIGHTS GROUP/light wasd4" index="0"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 367 )
+"anims/New Anim" = SubResource( 369 )
 
 [node name="light wasd5" parent="LIGHTS GROUP" index="5" instance=ExtResource( 20 )]
 position = Vector2( 1535.4, -580.272 )
@@ -5148,7 +5133,7 @@ shadow_enabled = false
 
 [node name="AnimationPlayer" parent="LIGHTS GROUP/light wasd5" index="0"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 368 )
+"anims/New Anim" = SubResource( 370 )
 
 [node name="light_aura" parent="LIGHTS GROUP" index="6" instance=ExtResource( 20 )]
 position = Vector2( 843, 90 )
@@ -5206,7 +5191,7 @@ position = Vector2( 358.694, 142.553 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="sombra" index="0"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 369 )
+"anims/New Anim" = SubResource( 371 )
 
 [node name="Sprite" parent="sombra" index="1"]
 z_index = 1
@@ -5280,12 +5265,12 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" parent="sombra" index="4"]
-anims/0 = SubResource( 370 )
-anims/3 = SubResource( 371 )
-anims/4 = SubResource( 372 )
-anims/5 = SubResource( 373 )
-anims/sumir = SubResource( 374 )
-anims/thanks = SubResource( 375 )
+anims/0 = SubResource( 372 )
+anims/3 = SubResource( 373 )
+anims/4 = SubResource( 374 )
+anims/5 = SubResource( 375 )
+anims/sumir = SubResource( 376 )
+anims/thanks = SubResource( 377 )
 
 [node name="leaves" parent="." index="42" instance=ExtResource( 59 )]
 position = Vector2( -313.951, 73.7308 )
@@ -5297,7 +5282,7 @@ visible = false
 position = Vector2( 834, -150 )
 
 [node name="AnimationPlayer" parent="leaves3" index="0"]
-"anims/New Anim" = SubResource( 376 )
+"anims/New Anim" = SubResource( 378 )
 
 [node name="Sprite" parent="leaves3" index="2"]
 visible = false
@@ -5306,7 +5291,7 @@ visible = false
 position = Vector2( -290.95, 70.6353 )
 
 [node name="AnimationPlayer" parent="leaves2" index="0"]
-"anims/New Anim" = SubResource( 377 )
+"anims/New Anim" = SubResource( 379 )
 
 [node name="Sprite" parent="leaves2" index="2"]
 visible = false
@@ -5322,9 +5307,8 @@ modulate = Color( 1, 1, 1, 0.403922 )
 position = Vector2( 1066, -520 )
 texture = ExtResource( 63 )
 
-[node name="Particles2D" type="Particles2D" parent="." index="47"]
-position = Vector2( -536.332, 22.5949 )
-process_material = SubResource( 378 )
+[node name="Particles2D" parent="." index="47" instance=ExtResource( 25 )]
+z_index = 6
 
 [node name="MissilesPowerup" parent="." index="48" instance=ExtResource( 8 )]
 position = Vector2( 314, 72 )
