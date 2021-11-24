@@ -4584,7 +4584,7 @@ script = ExtResource( 50 )
 position = Vector2( 107.029, -10.7029 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="casinha/Area2D" index="0"]
-position = Vector2( 35.0396, 1.33484 )
+position = Vector2( -73.2779, -0.910064 )
 shape = SubResource( 252 )
 
 [node name="TextureRect" type="TextureRect" parent="casinha" index="1"]
@@ -4631,7 +4631,7 @@ rotation = 4.32318
 [node name="Door2" type="Area2D" parent="." index="33" groups=[
 "Door",
 ]]
-position = Vector2( 1329, -18 )
+position = Vector2( 1438.44, -14.0714 )
 collision_layer = 256
 script = ExtResource( 27 )
 connection = ExtResource( 52 )

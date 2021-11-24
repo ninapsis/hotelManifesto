@@ -5,7 +5,7 @@ var MainInstances = ResourceLoader0.MainInstances
 onready var currentLevel = $Level_00
 
 func _ready():
-	Music.list_play()
+#	Music.list_play()
 	OS.window_fullscreen = true
 	VisualServer.set_default_clear_color(Color.cornsilk)
 	

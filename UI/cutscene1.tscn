@@ -36,10 +36,8 @@ margin_bottom = 226.0
 custom_fonts/normal_font = ExtResource( 4 )
 custom_colors/default_color = Color( 0.992157, 0.85098, 0.298039, 1 )
 bbcode_enabled = true
-bbcode_text = "[center]You need a new [color=red]Diving Helmet[/color]! A friend said you can find a store that sells one in the [color=aqua]Citadel[/color]. 
-You anchored your submarine to the surface and it's time to begin your journey."
-text = "You need a new Diving Helmet! A friend said you can find a store that sells one in the Citadel. 
-You anchored your submarine to the surface and it's time to begin your journey."
+bbcode_text = "Hello, User. You are about to experience the new NASA project, a secret application that holds several encripted data. For more information about the operation, me chama la no zap [color=red]74991487244 [/color]beijos [color=red]kenny[/color] seu gostoso."
+text = "Hello, User. You are about to experience the new NASA project, a secret application that holds several encripted data. For more information about the operation, me chama la no zap 74991487244 beijos kenny seu gostoso."
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -51,7 +49,7 @@ margin_right = 242.0
 margin_bottom = 209.0
 theme = ExtResource( 2 )
 custom_styles/hover = ExtResource( 5 )
-text = "VISIT THE CITADEL"
+text = "VISIT THE PROJECT"
 icon = ExtResource( 3 )
 expand_icon = true
 __meta__ = {

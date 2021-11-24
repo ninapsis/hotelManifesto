@@ -18,7 +18,7 @@ func set_health(value):
 	health = clamp(value, 0, max_health)
 	emit_signal("player_health_changed", health)
 	if health == 0:
-		Music.list_stop()
+#		Music.list_stop()
 		emit_signal("player_died")
 
 func set_missiles(value):
