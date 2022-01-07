@@ -2,7 +2,7 @@ extends Node
 
 var MainInstances = ResourceLoader0.MainInstances
 
-onready var currentLevel = $Level_00
+onready var currentLevel = $Level
 
 func _ready():
 	Music.list_play()

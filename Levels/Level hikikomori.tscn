@@ -1,4 +1,4 @@
-[gd_scene load_steps=258 format=2]
+[gd_scene load_steps=254 format=2]
 
 [ext_resource path="res://Tilesets/pixel manifesto.png" type="Texture" id=1]
 [ext_resource path="res://Tilesets/pixel manifesto hotel inside-export.png" type="Texture" id=2]
@@ -10,9 +10,7 @@
 [ext_resource path="res://World/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://porta.png" type="Texture" id=9]
 [ext_resource path="res://World/luz.tscn" type="PackedScene" id=10]
-[ext_resource path="res://World/pc.png" type="Texture" id=11]
 [ext_resource path="res://TileMap.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Levels/mamica diario.gd" type="Script" id=13]
 [ext_resource path="res://particles-folha.png" type="Texture" id=14]
 [ext_resource path="res://World/SaveStation.tscn" type="PackedScene" id=15]
 [ext_resource path="res://World/barraqiunha.png" type="Texture" id=16]
@@ -2276,26 +2274,6 @@ resource_local_to_scene = true
 } ]
 3/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=232]
-extents = Vector2( 1.67968, 4.27632 )
-
-[sub_resource type="Animation" id=233]
-resource_name = "New Anim"
-length = 5.0
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 3.3, 3.5, 3.8, 4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 1, 2, 3, 0 ]
-}
-
 [sub_resource type="Curve2D" id=234]
 _data = {
 "points": PoolVector2Array( -8.33249, -27.6061, 8.33249, 27.6061, -3, -28, 2.00226, -14.6832, -2.00226, 14.6832, -22, -14, 0, 0, 0, 0, -8, -5, -2.66968, 17.6866, 2.66968, -17.6866, 9, -4, -5.00565, 14.3495, 5.00565, -14.3495, -8, -13, 1.43422, 9.34388, -1.43422, -9.34388, 9, -18, -1.93558, -15.2177, 1.93558, 15.2177, -3, -28 )
@@ -2318,23 +2296,23 @@ tracks/0/keys = {
 "values": [ 0.0, 152.14 ]
 }
 
-[sub_resource type="Gradient" id=239]
+[sub_resource type="Gradient" id=236]
 offsets = PoolRealArray( 0.162362, 0.542435, 0.848709 )
 colors = PoolColorArray( 0.960784, 0.92549, 0.0470588, 0.658824, 0.976563, 0.973384, 0.972748, 1, 0.964706, 0.215686, 0.0666667, 0.666667 )
 
-[sub_resource type="GradientTexture" id=240]
-gradient = SubResource( 239 )
+[sub_resource type="GradientTexture" id=237]
+gradient = SubResource( 236 )
 
-[sub_resource type="Gradient" id=237]
+[sub_resource type="Gradient" id=238]
 offsets = PoolRealArray( 0.608856 )
 colors = PoolColorArray( 0.741697, 0.741697, 0.741697, 1 )
 
-[sub_resource type="GradientTexture" id=238]
-gradient = SubResource( 237 )
+[sub_resource type="GradientTexture" id=239]
+gradient = SubResource( 238 )
 width = 200
 
-[sub_resource type="ParticlesMaterial" id=236]
-trail_color_modifier = SubResource( 238 )
+[sub_resource type="ParticlesMaterial" id=240]
+trail_color_modifier = SubResource( 239 )
 emission_shape = 2
 emission_box_extents = Vector3( 100, 20, 1 )
 flag_disable_z = true
@@ -2347,7 +2325,7 @@ linear_accel_random = 0.79
 radial_accel = 19.57
 radial_accel_random = 1.0
 tangential_accel = 19.57
-color_ramp = SubResource( 240 )
+color_ramp = SubResource( 237 )
 
 [node name="Level" instance=ExtResource( 6 )]
 
@@ -2393,30 +2371,10 @@ texture = ExtResource( 9 )
 [node name="CollisionShape2D" parent="Door" index="1"]
 position = Vector2( 14, 17 )
 
-[node name="pc" type="Sprite" parent="." index="4"]
-position = Vector2( 1090.91, 182.675 )
-texture = ExtResource( 11 )
-hframes = 4
-
-[node name="mamica diario" type="StaticBody2D" parent="pc" index="0"]
-scale = Vector2( 1.5, 1.5 )
-script = ExtResource( 13 )
-
-[node name="Area2D" type="Area2D" parent="pc/mamica diario" index="0"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="pc/mamica diario/Area2D" index="0"]
-position = Vector2( -1, -1.90735e-06 )
-scale = Vector2( 7.73959, 3.04 )
-shape = SubResource( 232 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="pc" index="1"]
-autoplay = "New Anim"
-"anims/New Anim" = SubResource( 233 )
-
-[node name="Light2D" parent="." index="5" instance=ExtResource( 10 )]
+[node name="Light2D" parent="." index="4" instance=ExtResource( 10 )]
 position = Vector2( 406, 131 )
 
-[node name="vagaulmeu" type="Node2D" parent="." index="6"]
+[node name="vagaulmeu" type="Node2D" parent="." index="5"]
 position = Vector2( 205, 158 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="vagaulmeu" index="0"]
@@ -2447,15 +2405,15 @@ remote_path = NodePath("../../../KinematicBody2D")
 autoplay = "Loop"
 anims/Loop = SubResource( 235 )
 
-[node name="bandedrinhas" type="Sprite" parent="." index="7"]
+[node name="bandedrinhas" type="Sprite" parent="." index="6"]
 position = Vector2( 797, 127 )
 texture = ExtResource( 17 )
 
-[node name="bandedrinhas2" type="Sprite" parent="." index="8"]
+[node name="bandedrinhas2" type="Sprite" parent="." index="7"]
 position = Vector2( 497, 125 )
 texture = ExtResource( 17 )
 
-[node name="barraqiunha" type="Sprite" parent="." index="9"]
+[node name="barraqiunha" type="Sprite" parent="." index="8"]
 position = Vector2( 603, 175 )
 texture = ExtResource( 16 )
 
@@ -2465,10 +2423,10 @@ position = Vector2( 31.2661, -6.65088 )
 scale = Vector2( 0.338248, 0.523039 )
 color = Color( 0.996078, 0.443137, 0.0784314, 1 )
 
-[node name="SaveStation" parent="." index="10" instance=ExtResource( 15 )]
+[node name="SaveStation" parent="." index="9" instance=ExtResource( 15 )]
 position = Vector2( 388, 149 )
 
-[node name="Particles2D" type="Particles2D" parent="." index="11"]
+[node name="Particles2D" type="Particles2D" parent="." index="10"]
 position = Vector2( -9, -5 )
 z_index = 6
 amount = 400
@@ -2477,10 +2435,7 @@ preprocess = 300.0
 speed_scale = 0.03
 visibility_rect = Rect2( -100, -100, 2000, 400 )
 local_coords = false
-process_material = SubResource( 236 )
+process_material = SubResource( 240 )
 texture = ExtResource( 14 )
-
-[connection signal="body_entered" from="pc/mamica diario/Area2D" to="pc/mamica diario" method="_on_Area2D_body_entered"]
-[connection signal="body_exited" from="pc/mamica diario/Area2D" to="pc/mamica diario" method="_on_Area2D_body_exited"]
 
 [editable path="Door"]
