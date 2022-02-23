@@ -200,6 +200,8 @@ occluder = SubResource( 7 )
 position = Vector2( 1, -15 )
 scale = Vector2( 0.37, 0.36 )
 color = Color( 0.952941, 0.74902, 0.133333, 1 )
+range_layer_min = 0
+range_layer_max = 0
 shadow_enabled = false
 
 [node name="Sprite" type="Sprite" parent="."]
