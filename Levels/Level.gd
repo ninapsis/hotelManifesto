@@ -7,6 +7,7 @@ func _ready():
 	if parent is WORLD:
 		parent.currentLevel = self 
 
+
 func save():
 	var save_dictionary = {
 		"filename" : get_filename(),

@@ -59,6 +59,8 @@ func _ready():
 	PlayerStats.connect("player_died", self, "_on_died")
 	PlayerStats.missiles_unlocked = SaverAndLoader.custom_data.missiles_unlocked
 	QM.NataliaQuest = SaverAndLoader.custom_data.NataliaQuest
+	QM.vendorQuest = true
+	QM.MicaQuest = true
 	MainInstances.Player = self 
 	call_deferred("assign_world_camera")
 	InteractionBox.disabled = true

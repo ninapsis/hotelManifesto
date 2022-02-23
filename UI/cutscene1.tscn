@@ -6,7 +6,7 @@
 [ext_resource path="res://UI/PixelFonte2.tres" type="DynamicFont" id=4]
 [ext_resource path="res://UI/ButtonHoverStylebox.tres" type="StyleBox" id=5]
 [ext_resource path="res://Tilesets/banner bracos2.png" type="Texture" id=6]
-[ext_resource path="res://Music and Sounds/humming_new_02.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Music and Sounds/hummingy.wav" type="AudioStream" id=7]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 pause_mode = 2

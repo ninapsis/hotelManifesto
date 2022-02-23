@@ -5,7 +5,7 @@
 [ext_resource path="res://UI/PixelFonte2.tres" type="DynamicFont" id=3]
 [ext_resource path="res://UI/instructions.png" type="Texture" id=4]
 [ext_resource path="res://Tilesets/banner bracos.png" type="Texture" id=5]
-[ext_resource path="res://Music and Sounds/humming_new_02.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Music and Sounds/hummingy.wav" type="AudioStream" id=6]
 
 [node name="StartMenu" type="CanvasLayer"]
 layer = 9
